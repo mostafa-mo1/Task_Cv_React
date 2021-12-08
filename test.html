@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+   
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="upp" > </div>
+    <div id="contaner" > </div>
+    <script type="text/babel">
+        class App extends React.Component{
+            render(){
+                return(
+                    <div >
+                       
+                       <Footer/>
+                    </div>
+                    )
+                }
+
+            }
+            class Ap extends React.Component{
+                render(){
+                   return(
+                    <div >
+                       
+                        <Aside/>
+                       <Up/>
+                       <Section/>
+                       
+                    </div>
+                    )
+                }
+
+            }
+            class Aside extends React.Component{
+                render(){
+                   return(
+                       
+                    <div className="Aside col-lg-3">
+                        <div >
+                         <img src={this.props.src} alt="Mostafa" width="100%"/>
+                         <p >Mostafa Mohamed</p>
+                        </div>
+                     <i className="fas fa-bezier-curve"></i> <span>Designer </span><br/><br/>
+                     <i className="fas fa-home"></i> <span>Eygpt</span><br/><br/>
+                     <i className="fas fa-envelope"></i> <span>mos@mail.com</span><br/><br/>
+                     <i className="fas fa-phone-alt"></i> <span>012345678</span>
+                     <hr/>
+                     <i className="fas fa-sun"></i> <span >Skills</span><br/>
+                     
+                     <label for="">Photography</label><br/>
+                     <input  type="range" name="" id="" value="70" /><br/>
+                     <label for="">Media</label><br/>
+                     <input  type="range" name="" id="" value="80" /><br/>
+                     <hr/>
+                     <i className="fas fa-globe-americas"></i><span >Languages</span> <br/>
+                     <label for="">English</label><br/>
+                     <input  type="range" name="" id="" value="90" /><br/>
+                     <label for="">spansh</label ><br/>
+                     <input  type="range" name="" id="" value="70" /><br/>
+                     <label for="">Arabic</label><br/>
+                     <input  type="range" name="" id="" value="100" /><br/>
+                                   
+                    </div>
+                    )
+                }
+
+            }
+            class Up extends React.Component{
+                render(){
+                    return( 
+                        <article className="Up col-lg-4" >
+                          <i className="fas fa-briefcase"></i><span >Work Experience</span><br/>       
+                           <h3>front end developer/W3shools.com</h3>
+                           <input type="date" name="" id=""/>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Atque error sapiente aut in quae nam distinctio sunt reprehenderit quo </p>
+                           <hr/>            
+                           <h3>Web developer/something.com</h3>
+                           <input type="date" name="" id=""/>
+                           <p>  molestias soluta, est laborum magni libero voluptate cumque doloremque aperiam unde nihil quae aliquid eaque.</p>
+                           <hr />
+                           <h3>Graphic Designer/designsomthing.com</h3>
+                           <input type="date" name="" id=""/>
+                           <p>  expedita deserunt omnis itaque natus quo consectetur quaerat.</p>
+                        
+
+
+                           
+                           </article>
+
+                            
+                        
+          
+                    )
+
+
+                }
+            }
+            class Section extends React.Component{
+                render(){
+                    return(
+                        <section className="Up" >
+                            <i className="fas fa-certificate"></i> <span >Education</span>
+                            <p>W3shools.com</p>
+                            <p>Web developer all nead toknow  </p>
+                            <hr/>
+                            <p>london business shool</p>
+                            <input type="date" name="" id=""/>
+                            <p>master degree</p>
+                            <hr/>
+                            <p>shool of coding</p>
+                            <input type="date" name="" id=""/>
+                            <p>bachelor degree</p>
+                         </section>  
+
+
+                    )
+                }
+            }
+          class Footer extends React.Component{
+              render(){
+                  return(
+                      <footer><p>Prepared by Mostafa Mohamed</p></footer>
+                  )
+              }
+          }
+
+
+          ReactDOM.render(<App/>,document.getElementById('contaner'))
+          ReactDOM.render(<Ap/>,document.getElementById('upp'))
+        </script>
+
+
+
+       <!-- <aside>
+          <div style="position: relative;">
+             <img src="man.jpg" alt="Mostafa" width="100%">
+             <p style="position:  absolute ; bottom: 10px;">Mostafa Mohamed</p>
+          </div>
+          <i class="fas fa-bezier-curve"></i> <span>Designer </span><br><br>
+          <i class="fas fa-home"></i> <span>Eygpt</span><br><br>
+          <i class="fas fa-envelope"></i> <span>mos@mail.com</span><br><br>
+          <i class="fas fa-phone-alt"></i> <span>012345678</span>
+          <hr>
+          <i class="fas fa-sun"></i> <span style="font-size: x-large;">Skills</span><br>
+          <label for="">Adobe Photoshop</label><br>
+          <input  type="range" name="" id="" value="90" ><br>
+          <label for="">Photography</label><br>
+          <input  type="range" name="" id="" value="70" ><br>
+          <label for="">Media</label><br>
+          <input  type="range" name="" id="" value="80" ><br>
+          <hr>
+          <i class="fas fa-globe-americas"></i><span style="font-size: x-large;">Languages</span> <br>
+          <label for="">English</label><br>
+          <input  type="range" name="" id="" value="90" ><br>
+          <label for="">spansh</label><br>
+          <input  type="range" name="" id="" value="70" ><br>
+          <label for="">Arabic</label><br>
+          <input  type="range" name="" id="" value="100" ><br>
+       </aside>
+        <div class="up">
+           <article>
+               <i class="fas fa-briefcase"></i><span style="font-size: xx-large;">Work Experience</span><br>       
+                <h3>front end developer/W3shools.com</h3>
+                <input type="date" name="" id="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Atque error sapiente aut in quae nam distinctio sunt reprehenderit quo </p>
+                <hr>            
+                <h3>Web developer/something.com</h3>
+                <input type="date" name="" id="">
+                <p>  molestias soluta, est laborum magni libero voluptate cumque doloremque aperiam unde nihil quae aliquid eaque.</p>
+                <hr>
+                <h3>Graphic Designer/designsomthing.com</h3>
+                <input type="date" name="" id="">
+                <p>  expedita deserunt omnis itaque natus quo consectetur quaerat.</p>
+           </article>
+           <section>
+              <i class="fas fa-certificate"></i> <span style="font-size: x-large;">Education</span>
+              <p>W3shools.com</p>
+              <p>Web developer all nead toknow  </p>
+              <hr>
+              <p>london business shool</p>
+              <input type="date" name="" id="">
+              <p>master degree</p>
+              <hr>
+              <p>shool of coding</p>
+              <input type="date" name="" id="">
+              <p>bachelor degree</p>
+           </section>     
+        </div>
+     <footer><p>Prepared by Mostafa Mohamed</p></footer>  -->
+</body>
+</html>
